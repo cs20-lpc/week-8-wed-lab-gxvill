@@ -72,5 +72,34 @@ double gRec(unsigned i) {
 *******************************************************************************/
 
 double gStack(unsigned i) {
-    // TODO
+    // TODO implement using the abilities of a stack
+
+    ArrayStack<double> buff;
+    double count;
+    buff.push(3.2);
+    
+    while(i != 0){
+        buff.push(1.1);
+        i--;
+    }
+
+    while(!buff.isEmpty()){
+        count += buff.peek();
+        buff.pop();
+    }
+
+    return count;
+
+    //regular implementation
+    /*
+    double count = 0;
+    while(i != 0){
+        count += 1.1;
+        i --;
+    }
+    count += 3.2;
+    return count;
+    */
+
+
 }
