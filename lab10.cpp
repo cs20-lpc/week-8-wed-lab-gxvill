@@ -74,7 +74,7 @@ double gRec(unsigned i) {
 double gStack(unsigned i) {
     // TODO implement using the abilities of a stack
 
-    ArrayStack<double> buff;
+    ArrayStack<double> buff(i+1);
     double count;
     buff.push(3.2);
     
